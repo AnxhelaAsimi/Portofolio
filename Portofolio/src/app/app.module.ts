@@ -4,19 +4,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { MenuToggleComponent } from './shared/header/menu-toggle/menu-toggle.component';
+import { SharedService } from './service/shared.service';
+import { ExpandedMenuComponent } from './shared/expanded-menu/expanded-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MenuToggleComponent
+    ExpandedMenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
