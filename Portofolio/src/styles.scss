@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 *{
-    box-sizing: border-box;
+    box-sizing: border-box;   
+    cursor: url('./assets/arrow.svg') 15 15,move;
+
 }
 
 body{
@@ -8,3 +10,8 @@ body{
     height: 100%;
     margin: 0px;
 }
+
+.pointer {
+    cursor: url('./assets/click.svg') 15 15,move;
+}
+
