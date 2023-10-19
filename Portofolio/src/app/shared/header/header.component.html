@@ -8,7 +8,9 @@
         <div class="bar_3 pointer" [ngClass]="{'bar_3_toggled': sharedService.isMenuToggled}"></div>
     </div>
     
-    <div  *ngIf="sharedService.isMenuToggled" class="expanded_menu">expanded-menu works!</div>
+    <div  *ngIf="sharedService.isMenuToggled" class="expanded_menu">
+        <app-expanded-menu></app-expanded-menu>
+    </div>
     
 </div>
 
