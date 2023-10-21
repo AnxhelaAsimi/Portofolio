@@ -1,0 +1,57 @@
+.contact_wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.menu_contact {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_contact a{
+    max-width: 100%;
+}
+
+.github {
+    color: var(--grey);
+    background-color: var(--grey2);
+}
+
+.linkedin {
+    color: var(--blue1);
+    background-color: var(--blue);
+}
+
+.upwork {
+    color: var(--blue3);
+    background-color: var(--blue2);
+}
+
+.skype {
+    color: var(--blue5);
+    background-color: var(--blue4);
+}
+
+.social_title {
+    font-size: 5.5rem;
+    font-weight: 600;
+    font-family: ExoSpace;
+    padding-right: 3rem;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.social_box {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.social_box svg {
+    width: 100%;
+    height: 9vh;    
+}
