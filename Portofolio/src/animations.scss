@@ -198,3 +198,28 @@
 @keyframes caret {
 	50% { border-right-color: transparent; }
 }
+
+
+@-moz-keyframes move-astronaut {
+  100% { -moz-transform: translate(-40vh, -40vh);}
+}
+@-webkit-keyframes move-astronaut {
+  100% { -webkit-transform: translate(-40vh, -40vh);}
+}
+@keyframes move-astronaut{
+  100% { -webkit-transform: translate(-40vh, -40vh); transform:translate(-40vh, -40vh); }
+}
+@-moz-keyframes rotate-astronaut {
+  100% { -moz-transform: rotate(-600deg);}
+}
+@-webkit-keyframes rotate-astronaut {
+  100% { -webkit-transform: rotate(-600deg);}
+}
+@keyframes rotate-astronaut{
+  100% { -webkit-transform: rotate(-600deg); transform:rotate(-600deg); }
+}
+
+
+@-moz-keyframes rocket-movement { 100% {-moz-transform: translate(1200px,-600px);} }
+@-webkit-keyframes rocket-movement {100% {-webkit-transform: translate(1200px,-600px); } }
+@keyframes rocket-movement { 100% {transform: translate(1200px,-600px);} }

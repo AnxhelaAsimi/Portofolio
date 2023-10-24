@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './routes/home/home.component';
+import { GotLostComponent } from './routes/got-lost/got-lost.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   //TODO:
   // { path: 'mywork', component: MyWorkComponent },
-  //{ path: '**', component: GotLostComponent }
+  { path: '**', component: GotLostComponent }
 
 ];
 

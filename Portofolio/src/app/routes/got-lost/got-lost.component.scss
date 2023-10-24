@@ -1,0 +1,64 @@
+.got_lost{
+
+        height: 90vh; 
+        width: 100%;
+        align-items: center;
+        background-image: linear-gradient(to right bottom,rgba(5,8,16,.6),rgba(5,8,16,.6)),url(../../../assets/bg.svg);
+        background-position: top;
+        background-size: cover;
+        display: flex;
+        justify-content: space-between;
+        padding: 8rem 5rem 0;
+        overflow: hidden;
+}
+
+.message {
+    margin-bottom: 1.4rem!important;
+    font-weight: 700;
+    letter-spacing: .02em;
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+    align-self: center;
+    width: 100%;
+}
+
+.message h1 span{
+    font-size: 6rem;
+}
+
+.message span {
+    color: var(--green4)!important;
+    font-family: Cyborg;
+    font-size: 4rem;
+    text-shadow: 3px 3px 0 var(--shadow1), -1px -1px 0 var(--shadow1), 1px -1px 0 var(--shadow1), -1px 1px 0 var(--shadow1), 1px 1px 0 var(--shadow1);
+}
+
+.message span a,a:active{
+    color: var(--green4)!important;
+}
+
+.object_rocket{
+    width: 5%;
+    z-index: 95;
+    position: absolute;
+    transform: translateX(-50px);
+    top: 75%;
+    pointer-events: none;
+    transform: rotate(45deg);
+    animation: rocket-movement 120s linear infinite both running;
+}
+
+.object_astronaut{
+    animation: rotate-astronaut 60s infinite linear both alternate;
+}
+
+.box_astronaut{
+    width: 20%;
+    z-index: 110 !important;
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    will-change: transform;
+    animation: move-astronaut 60s infinite linear both alternate;
+}

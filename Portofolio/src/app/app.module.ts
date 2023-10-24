@@ -8,6 +8,7 @@ import { SharedService } from './service/shared.service';
 import { ExpandedMenuComponent } from './shared/expanded-menu/expanded-menu.component';
 import { HomeComponent } from './routes/home/home.component';
 import { AvatarComponent } from './routes/home/avatar/avatar.component';
+import { GotLostComponent } from './routes/got-lost/got-lost.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AvatarComponent } from './routes/home/avatar/avatar.component';
     HeaderComponent,
     ExpandedMenuComponent,
     HomeComponent,
-    AvatarComponent
+    AvatarComponent,
+    GotLostComponent
   ],
   imports: [
     BrowserModule,
