@@ -1,0 +1,72 @@
+.hero_section {
+    height: 90vh; 
+    width: 100%;
+    align-items: center;
+    background-image: linear-gradient(to right bottom,rgba(5,8,16,.6),rgba(5,8,16,.6)),url(../../../assets/bg.svg);
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 5rem 0;
+    overflow: hidden;
+}
+
+.intro {
+    padding-right: 6rem;
+    width: 55%;
+    -webkit-animation: fadeInLeft 2s ease forwards;
+    animation: fadeInLeft 2s ease forwards;
+}
+
+.my_name {
+    background: var(--green3);
+    border-radius: 12px;
+    color: var(--green4);
+    font-size: 1.4rem;
+    font-weight: 900;
+    letter-spacing: .05em;
+    margin: 0;
+    width: max-content;
+    width: -webkit-max-content;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+
+.my_name span {
+    animation: wobble 2.5s infinite;
+    display: inline-block;
+    font-size: 1.7rem;
+}
+
+.moto {
+    margin-bottom: 2rem!important;
+    font-weight: 900;
+    letter-spacing: .02em;
+    margin: 0;
+    text-transform: capitalize;
+
+}
+
+.moto span {
+    color: var(--green4);
+    font-family: Cyborg;
+    font-size: 4.2rem;
+    text-shadow: 3px 3px 0 var(--shadow1), -1px -1px 0 var(--shadow1), 1px -1px 0 var(--shadow1), -1px 1px 0 var(--shadow1), 1px 1px 0 var(--shadow1);
+}
+
+.about_me {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    line-height: 30px;
+    margin: 0;
+    opacity: .8;
+    text-transform: lowercase;
+}
+
+.anxhela_avatar {
+    -webkit-animation: fadeInRight 2s ease forwards;
+    animation: fadeInRight 2s ease forwards;
+    padding-bottom: 1rem;
+    width: 45%;
+}

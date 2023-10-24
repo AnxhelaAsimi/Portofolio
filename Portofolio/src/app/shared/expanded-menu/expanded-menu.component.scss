@@ -8,6 +8,7 @@
     width: 50%;
     height: 100%;
     display: flex;
+    background-color: var(--grey3);
 }
 
 .menu_wrapper {
@@ -22,6 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  
 }
 
 .menu_contact a{
@@ -31,21 +33,37 @@
 .github {
     color: var(--grey);
     background-color: var(--grey2);
+    -webkit-animation: zoomIn .5s ease forwards;
+    animation: zoomIn .5s ease forwards;
+    opacity: 1;
+    transition: opacity .5s;
 }
 
 .linkedin {
     color: var(--blue1);
     background-color: var(--blue);
+    -webkit-animation: zoomIn 1s ease forwards;
+    animation: zoomIn 1s ease forwards;
+    opacity: 1;
+    transition: opacity 1s;
 }
 
 .upwork {
     color: var(--blue3);
     background-color: var(--blue2);
+    -webkit-animation: zoomIn 1.5s ease forwards;
+    animation: zoomIn 1.5s ease forwards;
+    opacity: 1;
+    transition: opacity 1.5s;
 }
 
 .skype {
     color: var(--blue5);
     background-color: var(--blue4);
+    -webkit-animation: zoomIn 2s ease forwards;
+    animation: zoomIn 2s ease forwards;
+    opacity: 1;
+    transition: opacity 2;
 }
 
 .social_title {

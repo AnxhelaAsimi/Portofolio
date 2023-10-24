@@ -31,7 +31,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/colors.scss"
+              "src/colors.scss",
+              "src/animations.scss"
             ],
             "scripts": []
           },
@@ -95,7 +96,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/colors.scss"
+              "src/colors.scss",
+              "src/animations.scss"
             ],
             "scripts": []
           }

@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { SharedService } from './service/shared.service';
 import { ExpandedMenuComponent } from './shared/expanded-menu/expanded-menu.component';
+import { HomeComponent } from './routes/home/home.component';
+import { AvatarComponent } from './routes/home/avatar/avatar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ExpandedMenuComponent
+    ExpandedMenuComponent,
+    HomeComponent,
+    AvatarComponent
   ],
   imports: [
     BrowserModule,
