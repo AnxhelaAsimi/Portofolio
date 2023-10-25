@@ -1,0 +1,68 @@
+.tooling {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 0;
+    width: 100%;
+}
+
+.tooling_title { 
+    -webkit-animation: flipInY 2s ease forwards;
+    animation: flipInY 2s ease forwards;
+    -webkit-backface-visibility: visible!important;
+    backface-visibility: visible!important;
+
+    align-items: center;
+    background: var(--blue6);
+    border-radius: 12px;
+    box-shadow: inset 0 0 4px 1px var(--green4);
+    -webkit-box-shadow: inset 0 0 4px 1px var(--green4);
+    -moz-box-shadow: inset 0 0 4px 1px var(--green4);
+    margin-bottom: 5rem;
+    padding: 0.8rem 2rem;
+    -webkit-transform: rotate(3.6deg);
+    transform: rotate(3.6deg);
+    color: var(--green4);
+    font-family: Cyborg;
+    font-weight: 900;
+    text-shadow: 3px 3px 0 var(--black), -1px -1px 0 var(--black), 1px -1px 0 var(--black), -1px 1px 0 var(--black), 1px 1px 0 var(--black);
+    text-transform: uppercase;
+}
+
+.tool {
+    align-items: center;
+    background: var(--grey4);
+    border-radius: 8px;
+    display: flex;
+    flex: 0 1 18%;
+    height: 60px;
+    justify-content: space-evenly;
+    margin: 1%;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.tooling_title h2 {
+    -webkit-text-stroke: 0.1px (--black);
+    -webkit-text-fill-color: var(--green4);
+}
+
+.tools_wrapper {
+    align-items: center;
+    background: var(--green5);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5rem;
+    width: 50%;
+    -webkit-animation: jackInTheBox 2s ease forwards;
+    animation: jackInTheBox 2s ease forwards;
+}
+
+.tool img{
+    width: 35px;
+    height: 50px;
+}

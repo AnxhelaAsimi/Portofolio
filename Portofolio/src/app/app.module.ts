@@ -9,6 +9,7 @@ import { ExpandedMenuComponent } from './shared/expanded-menu/expanded-menu.comp
 import { HomeComponent } from './routes/home/home.component';
 import { AvatarComponent } from './routes/home/avatar/avatar.component';
 import { GotLostComponent } from './routes/got-lost/got-lost.component';
+import { ToolingComponent } from './routes/home/tooling/tooling.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { GotLostComponent } from './routes/got-lost/got-lost.component';
     ExpandedMenuComponent,
     HomeComponent,
     AvatarComponent,
-    GotLostComponent
+    GotLostComponent,
+    ToolingComponent
   ],
   imports: [
     BrowserModule,
