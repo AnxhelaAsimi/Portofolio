@@ -6,7 +6,6 @@
     background-position: top;
     background-size: cover;
     display: flex;
-    justify-content: space-between;
     padding: 8rem 5rem 0;
     overflow: hidden;
 }
@@ -30,6 +29,7 @@
     width: -webkit-max-content;
     text-transform: capitalize;
     margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
 }
 
 .my_name span {
@@ -68,5 +68,5 @@
     -webkit-animation: fadeInRight 2s ease forwards;
     animation: fadeInRight 2s ease forwards;
     padding-bottom: 1rem;
-    width: 45%;
+    width: 55vh;
 }

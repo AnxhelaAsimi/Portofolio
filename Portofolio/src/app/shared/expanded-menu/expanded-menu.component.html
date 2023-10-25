@@ -66,10 +66,11 @@
     </div>
     <div class="menu_wrapper">
         <ul class="menu_list">
-            <li class="nav-link"><a>HOME</a></li>
-            <li class="nav-link"><a>WORK</a></li>
-            <li class="nav-link"><a>RESUME</a></li>
-            <li class="nav-link"><a>CONTACT</a></li>
+            <li (click)="navigateTo('home')" class="nav-link" [ngClass]="{'selected' : selectedMenu === 'home'}"><a>HOME</a></li>
+            <li (click)="navigateTo('work')" class="nav-link" [ngClass]="{'selected' : selectedMenu === 'work'}"><a>WORK</a></li>
+            <li (click)="navigateTo('about')" class="nav-link" [ngClass]="{'selected' : selectedMenu === 'about'}"><a>ABOUT ME</a></li>
+            <li (click)="navigateTo('resume')" class="nav-link" [ngClass]="{'selected' : selectedMenu === 'resume'}"><a>RESUME</a></li>
+            <li (click)="navigateTo('contact')" class="nav-link" [ngClass]="{'selected' : selectedMenu === 'contact'}"><a>CONTACT</a></li>
         </ul>
     </div>
 </div>
