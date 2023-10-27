@@ -19,7 +19,6 @@ export class PreloaderComponent implements OnInit, OnDestroy {
     this.timer = setInterval(() => {
       this.progress = this.progress >= 100 ? 10 : this.progress + 10;
 
-      // Implement your GSAP animations here
       this.tl
         .to('.square', {
           opacity: 0.7
