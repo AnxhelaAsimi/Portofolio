@@ -10,6 +10,7 @@ import { HomeComponent } from './routes/home/home.component';
 import { AvatarComponent } from './routes/home/avatar/avatar.component';
 import { GotLostComponent } from './routes/got-lost/got-lost.component';
 import { ToolingComponent } from './routes/home/tooling/tooling.component';
+import { PreloaderComponent } from './shared/preloader/preloader.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ToolingComponent } from './routes/home/tooling/tooling.component';
     HomeComponent,
     AvatarComponent,
     GotLostComponent,
-    ToolingComponent
+    ToolingComponent,
+    PreloaderComponent
   ],
   imports: [
     BrowserModule,
