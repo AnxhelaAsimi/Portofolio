@@ -7,9 +7,21 @@
 
         </div>
         <div class="contact_form">
-            <div>name</div>
-            <div>email</div>
-            <div>message</div>
+            <div style="display: flex; gap: 1rem">
+                <div class="contact_input" style="width: 15rem">
+                    <input  type="text" name="name" placeholder="name"> 
+                </div>
+                <div class="contact_input" style="width: 25rem">
+                    <input  type="email" name="email" placeholder="email"> 
+                </div>
+            </div>
+            <div class="contact_input">
+                <input type="text" name="subject" placeholder="subject">
+            </div> 
+            <div class="contact_input">
+                <textarea cols="50" rows="10" name="message" placeholder="type your message here..." ></textarea>
+            </div>
+            <div class="button_wrap pointer"><button class="button pointer">Send →</button></div>
         </div>
     </div>        
 </div>

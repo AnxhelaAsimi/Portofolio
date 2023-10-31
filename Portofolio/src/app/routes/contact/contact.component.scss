@@ -1,6 +1,6 @@
 .contact_wrapper {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     align-items: center;
     margin: auto;
     display: flex;
@@ -10,6 +10,9 @@
 
 .form_wrapper{
     display: flex;
+    width: 80%;
+    min-height: 60vh;
+    height: 60vh;
 }
 
 .contact_title{
@@ -24,8 +27,9 @@
         box-shadow: inset 0 0 4px 1px var(--green4);
         -webkit-box-shadow: inset 0 0 4px 1px var(--green4);
         -moz-box-shadow: inset 0 0 4px 1px var(--green4);
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
         padding: 0.8rem 2rem;
+
         -webkit-transform: rotate(3.6deg);
         transform: rotate(3.6deg);
         color: var(--green4);
@@ -38,10 +42,127 @@
 }
 
 .astronaut{
-    width: 30vh;
-    height: 30vh;
+    width: 45%;
+    height: 45vh;
     background-image: url('../../../assets/astronautmail.svg');
     background-repeat: no-repeat;
     -webkit-animation: zoomIn 1.5s ease forwards;
     animation: zoomIn 1.5s ease forwards;
+    background-position: center;
+}
+
+.contact_form {
+    width: 55%;
+}
+
+.contact_input {
+    align-items: center;
+    background: var(--blue6);
+    border-radius: 12px;
+    box-shadow: inset 0 0 4px 1px var(--green4);
+    -webkit-box-shadow: inset 0 0 4px 1px var(--green4);
+    -moz-box-shadow: inset 0 0 4px 1px var(--green4);
+    margin-bottom: 1rem;
+    padding: 0.8rem 2rem;
+}
+
+.contact_input input  {
+    background-color: var(--blue6)!important;
+    color: var(--green4)!important;
+    font-family: Cyborg;
+    outline: none;
+    border: 0;
+    width: 100%;
+}
+.contact_input input:-webkit-autofill,
+.contact_input input:-webkit-autofill:hover, 
+.contact_input input:-webkit-autofill:focus, 
+.contact_input input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--green4)!important; 
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #23232329;
+}
+.contact_input input::placeholder {
+    color: var(--green5);
+
+}
+
+.contact_input textarea {
+    background-color: var(--blue6);
+    color: var(--green4);
+    font-family: Cyborg;
+    outline: none;
+    width: 100%;
+    border: 0;
+}
+
+.contact_input textarea::placeholder {
+    color: var(--green5);
+
+}
+
+.button_wrap {
+    align-items: center;
+    display: flex;
+    height: -webkit-max-content;
+    height: max-content;
+    justify-content: center;
+    margin-top: 2rem
+}
+
+.button {
+    background: #14e956;
+    background-color: #14e956;
+    background-image: linear-gradient(315deg,#14e956,#72f29a);
+    border: none;
+    border-radius: 7px;
+    box-shadow: 9px 7px 32px -11px rgba(20,233,86,.74);
+    font-family: Cyborg;
+    font-size: 1.1rem;
+    font-weight: 900;
+    outline: none;
+    padding: 0.5rem 1.9rem;
+    position: relative;
+    text-transform: lowercase;
+    align-self: flex-end;
+    transition: all .3s ease-in-out 0s;
+}
+
+.button:before {
+    border: 3px solid #72f29a;
+    border-radius: 7px;
+    box-shadow: 0 0 60px rgba(20,233,86,.64);
+    content: "";
+    left: 50%;
+    min-height: 3rem;
+    min-width: 9rem;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    transition: all .3s ease-in-out 0s;
+}
+.button:hover:before {
+    opacity: 1;
+}
+.button:after {
+    -webkit-animation: ring 1.5s infinite;
+    animation: ring 1.5s infinite;
+    border: 6px solid #14e956;
+    border-radius: 7px;
+    content: "";
+    height: 3rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 9rem;
+    z-index: -1;
+}
+
+.button:hover::after{
+    display: none;
 }
