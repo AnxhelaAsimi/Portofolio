@@ -1,0 +1,47 @@
+.contact_wrapper {
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form_wrapper{
+    display: flex;
+}
+
+.contact_title{
+        -webkit-animation: flipInY 2s ease forwards;
+        animation: flipInY 2s ease forwards;
+        -webkit-backface-visibility: visible!important;
+        backface-visibility: visible!important;
+    
+        align-items: center;
+        background: var(--blue6);
+        border-radius: 12px;
+        box-shadow: inset 0 0 4px 1px var(--green4);
+        -webkit-box-shadow: inset 0 0 4px 1px var(--green4);
+        -moz-box-shadow: inset 0 0 4px 1px var(--green4);
+        margin-bottom: 5rem;
+        padding: 0.8rem 2rem;
+        -webkit-transform: rotate(3.6deg);
+        transform: rotate(3.6deg);
+        color: var(--green4);
+        font-family: Cyborg;
+        font-weight: 900;
+        text-shadow: 3px 3px 0 var(--black), -1px -1px 0 var(--black), 1px -1px 0 var(--black), -1px 1px 0 var(--black), 1px 1px 0 var(--black);
+        text-transform: uppercase;
+        -webkit-text-stroke: 0.1px #000;
+        -webkit-text-fill-color: var(--green4);    
+}
+
+.astronaut{
+    width: 30vh;
+    height: 30vh;
+    background-image: url('../../../assets/astronautmail.svg');
+    background-repeat: no-repeat;
+    -webkit-animation: zoomIn 1.5s ease forwards;
+    animation: zoomIn 1.5s ease forwards;
+}

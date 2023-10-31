@@ -11,6 +11,7 @@ import { AvatarComponent } from './routes/home/avatar/avatar.component';
 import { GotLostComponent } from './routes/got-lost/got-lost.component';
 import { ToolingComponent } from './routes/home/tooling/tooling.component';
 import { PreloaderComponent } from './shared/preloader/preloader.component';
+import { ContactComponent } from './routes/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PreloaderComponent } from './shared/preloader/preloader.component';
     AvatarComponent,
     GotLostComponent,
     ToolingComponent,
-    PreloaderComponent
+    PreloaderComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
