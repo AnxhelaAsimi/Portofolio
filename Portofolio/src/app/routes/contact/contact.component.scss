@@ -13,32 +13,7 @@
     width: 80%;
     min-height: 60vh;
     height: 60vh;
-}
-
-.contact_title{
-        -webkit-animation: flipInY 2s ease forwards;
-        animation: flipInY 2s ease forwards;
-        -webkit-backface-visibility: visible!important;
-        backface-visibility: visible!important;
-    
-        align-items: center;
-        background: var(--blue6);
-        border-radius: 12px;
-        box-shadow: inset 0 0 4px 1px var(--green4);
-        -webkit-box-shadow: inset 0 0 4px 1px var(--green4);
-        -moz-box-shadow: inset 0 0 4px 1px var(--green4);
-        margin-bottom: 3rem;
-        padding: 0.8rem 2rem;
-
-        -webkit-transform: rotate(3.6deg);
-        transform: rotate(3.6deg);
-        color: var(--green4);
-        font-family: Cyborg;
-        font-weight: 900;
-        text-shadow: 3px 3px 0 var(--black), -1px -1px 0 var(--black), 1px -1px 0 var(--black), -1px 1px 0 var(--black), 1px 1px 0 var(--black);
-        text-transform: uppercase;
-        -webkit-text-stroke: 0.1px #000;
-        -webkit-text-fill-color: var(--green4);    
+    align-items: center;
 }
 
 .astronaut{
@@ -73,6 +48,7 @@
     outline: none;
     border: 0;
     width: 100%;
+    font-size: 1.4rem;
 }
 .contact_input input:-webkit-autofill,
 .contact_input input:-webkit-autofill:hover, 
@@ -95,6 +71,7 @@
     outline: none;
     width: 100%;
     border: 0;
+    font-size: 1.4rem;
 }
 
 .contact_input textarea::placeholder {
@@ -102,67 +79,3 @@
 
 }
 
-.button_wrap {
-    align-items: center;
-    display: flex;
-    height: -webkit-max-content;
-    height: max-content;
-    justify-content: center;
-    margin-top: 2rem
-}
-
-.button {
-    background: #14e956;
-    background-color: #14e956;
-    background-image: linear-gradient(315deg,#14e956,#72f29a);
-    border: none;
-    border-radius: 7px;
-    box-shadow: 9px 7px 32px -11px rgba(20,233,86,.74);
-    font-family: Cyborg;
-    font-size: 1.1rem;
-    font-weight: 900;
-    outline: none;
-    padding: 0.5rem 1.9rem;
-    position: relative;
-    text-transform: lowercase;
-    align-self: flex-end;
-    transition: all .3s ease-in-out 0s;
-}
-
-.button:before {
-    border: 3px solid #72f29a;
-    border-radius: 7px;
-    box-shadow: 0 0 60px rgba(20,233,86,.64);
-    content: "";
-    left: 50%;
-    min-height: 3rem;
-    min-width: 9rem;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    transition: all .3s ease-in-out 0s;
-}
-.button:hover:before {
-    opacity: 1;
-}
-.button:after {
-    -webkit-animation: ring 1.5s infinite;
-    animation: ring 1.5s infinite;
-    border: 6px solid #14e956;
-    border-radius: 7px;
-    content: "";
-    height: 3rem;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    width: 9rem;
-    z-index: -1;
-}
-
-.button:hover::after{
-    display: none;
-}
