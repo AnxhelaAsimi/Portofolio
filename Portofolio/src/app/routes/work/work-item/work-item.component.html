@@ -1,0 +1,16 @@
+<div class="work_item_wrapper">
+    <div *ngIf="isRight" class="work_image">
+        <img src="../../../../assets/showroom/{{image}}">
+    </div>
+    <div class="details">
+        <div class="title">
+            <h4>{{title}}</h4>
+        </div>
+        <div class="description">{{description}}</div>
+    </div>
+    <div  *ngIf="!isRight" class="work_image">
+
+    </div>
+
+
+</div>

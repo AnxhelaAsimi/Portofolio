@@ -12,6 +12,9 @@ import { GotLostComponent } from './routes/got-lost/got-lost.component';
 import { ToolingComponent } from './routes/home/tooling/tooling.component';
 import { PreloaderComponent } from './shared/preloader/preloader.component';
 import { ContactComponent } from './routes/contact/contact.component';
+import { ShowroomComponent } from './routes/home/showroom/showroom.component';
+import { WorkComponent } from './routes/work/work.component';
+import { WorkItemComponent } from './routes/work/work-item/work-item.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { ContactComponent } from './routes/contact/contact.component';
     GotLostComponent,
     ToolingComponent,
     PreloaderComponent,
-    ContactComponent
+    ContactComponent,
+    ShowroomComponent,
+    WorkComponent,
+    WorkItemComponent
   ],
   imports: [
     BrowserModule,

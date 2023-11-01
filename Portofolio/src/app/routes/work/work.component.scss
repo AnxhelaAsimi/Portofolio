@@ -1,0 +1,24 @@
+.works_wrapper {
+    margin-top: 15rem;
+}
+
+.works_header {
+    display: flex;
+    margin-left: 5rem;
+}
+
+.works_header h2 {
+    font-family: Cyborg;
+    font-weight: 900;
+    margin: 0 0.5rem;
+    padding: 0;
+}
+
+.work_items{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 0 7rem;
+    padding: 0 5rem;
+}
