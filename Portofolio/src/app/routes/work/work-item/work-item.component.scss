@@ -6,8 +6,11 @@
     width: 100%;
 }
 
-.work_image {
+.work_image,.work_image_reverse {
     width: 60%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .work_image img { 
@@ -23,6 +26,26 @@
     transition: all .6s ease;
 }
 
+.work_image_reverse img {
+    border-radius: 15px;
+    box-shadow: 0 60px 123px -25px hsla(225,2%,62%,.42), 0 35px 75px -35px hsla(225,2%,62%,.08);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    height: 398px;
+    opacity: 1;
+    -webkit-transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg);
+    transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg);
+    transition: all .6s ease;
+    width: 700px;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+    -webkit-transform: perspective(800px) rotateY(-25deg) scale(.8) rotateX(10deg);
+    transform: perspective(800px) rotateY(-25deg) scale(.8) rotateX(10deg);
+    transition: all .6s ease;
+
+}
+
 .work_image img:hover {
     box-shadow: 0 19px 67px -38px hsla(225,2%,62%,.8);
     -webkit-filter: blur(0.2px);
@@ -30,4 +53,41 @@
     opacity: 1;
     -webkit-transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1);
     transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1);
+}
+
+.work_image_reverse img:hover {
+    box-shadow: 0 19px 67px -38px hsla(225,2%,62%,.8);
+    -webkit-filter: blur(0.2px);
+    filter: blur(0.2px);
+    opacity: 1;
+    -webkit-transform: perspective(800px) rotateY(15deg) translateY(50px) rotateX(10deg) scale(1);
+    transform: perspective(800px) rotateY(15deg) translateY(50px) rotateX(10deg) scale(1);
+}
+
+.details {
+    width: 40%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h4 {
+    width: max-content;
+    border: 3px solid var(--green4);
+    box-shadow: 6px 6px 0 0 var(--green4);
+    color: var(--green4);
+    font-family: Cyborg;
+    font-weight: 700;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    padding: 0.7rem 1.1rem;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 1rem;
+    margin: 0 0 3.5rem;
+    text-align: center;
 }

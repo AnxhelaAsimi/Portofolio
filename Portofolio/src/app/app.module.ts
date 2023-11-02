@@ -15,6 +15,7 @@ import { ContactComponent } from './routes/contact/contact.component';
 import { ShowroomComponent } from './routes/home/showroom/showroom.component';
 import { WorkComponent } from './routes/work/work.component';
 import { WorkItemComponent } from './routes/work/work-item/work-item.component';
+import { HomeAboutComponent } from './routes/home/home-about/home-about.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { WorkItemComponent } from './routes/work/work-item/work-item.component';
     ContactComponent,
     ShowroomComponent,
     WorkComponent,
-    WorkItemComponent
+    WorkItemComponent,
+    HomeAboutComponent
   ],
   imports: [
     BrowserModule,

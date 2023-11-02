@@ -92,6 +92,7 @@ a {
 
 //flip card for titles
 .flip_title{
+    width: max-content;
     -webkit-animation: flipInY 2s ease forwards;
     animation: flipInY 2s ease forwards;
     -webkit-backface-visibility: visible!important;

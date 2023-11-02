@@ -1,0 +1,118 @@
+
+footer {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 5rem;
+    padding: 0;
+    width: 100%;
+}
+ 
+.footer_title {
+    align-self: center;
+    margin-bottom: 4.5rem;
+    -webkit-transform: rotate(3.6deg);
+    transform: rotate(3.6deg);
+}
+
+.footer_title {
+    color: var(--green4);
+    font-family: Cyborg;
+    font-size: 3rem;
+    font-weight: 900;
+    opacity: .9;
+    text-shadow: 3px 3px 0 var(--green4), -1px -1px 0 var(--green4), 1px -1px 0 var(--green4), -1px 1px 0 var(--green4), 1px 1px 0 var(--green4);
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.4px #000;
+    -webkit-text-fill-color: var(--green4);
+}
+
+.socials {
+    display: flex;
+    width: 100%;
+}
+
+.footer_contact {
+    width: 25%;
+    display: flex;
+    height: 9rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+.footer_contact:hover {
+    opacity: .7;
+}
+
+.footer_contact svg {
+    height: 10vh;
+    width: 10vh;
+}
+
+.github {
+    color: var(--grey);
+    background-color: var(--grey2);
+}
+
+.linkedin {
+    color: var(--blue1);
+    background-color: var(--blue);
+}
+
+.upwork {
+    color: var(--blue3);
+    background-color: var(--blue2);
+}
+
+.skype {
+    color: var(--blue5);
+    background-color: var(--blue4);
+}
+
+.email_me {
+    width: 100%;
+    align-items: center;
+    background: var(--green6);
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    width: 100%;
+    color: var(--white3);
+    font-family: Cyborg;
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin: 0 0 -0.3rem;
+    text-transform: uppercase;
+}
+
+.email_me svg {
+    height: 8vh;
+    margin: -0.3rem 0 0;
+    margin-left: 2rem;
+    width: 8vh;
+}
+
+.email_me:hover {
+    opacity: .7;
+}
+
+.copyright {
+    align-items: center;
+    background: var(--grey5);
+    display: flex;
+    height: -webkit-max-content;
+    height: max-content;
+    justify-content: center;
+    width: 100%;
+    color: var(--green7);
+    font-family: Cyborg;
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 2rem 0;
+    text-transform: capitalize;
+}
