@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { SharedService } from './service/shared.service';
+import { NavigationStart, Router } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +10,24 @@ import { SharedService } from './service/shared.service';
 })
 export class AppComponent {
   title = 'Portofolio';
-  constructor(public sharedService: SharedService){
+  showPreloader: boolean;
+
+  constructor(public sharedService: SharedService, private router: Router){
+    this.showPreloader=true;
+    // setTimeout(() => {
+    //   this.showPreloader = false;
+    // }, 4100);
     
+    this.router.events.pipe(filter(event => event instanceof NavigationStart)).subscribe(() => {
+      this.showPreloader=true;
+      setTimeout(() => {
+        this.showPreloader = false;
+      }, 4100);
+    });
+
+ 
+
   }
+
 
 }

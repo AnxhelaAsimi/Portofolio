@@ -8,43 +8,43 @@
     align-items: center;
     .load {
         width: 70%;
-        animation: fadeInUp 1s ease forwards, fadeOutUp 1s ease forwards 4s;
+        animation: fadeInUp 1s ease forwards, fadeOutUp 1s ease forwards 3s;
         #lo {
             #roar {
                 #roar-one {
                     stroke-dasharray: 785;
                     stroke-dashoffset: 785;
-                    animation: line-anim 1.5s ease forwards, fill 0.5s ease forwards 3.5s;
+                    animation: line-anim 1.5s ease forwards, fill 0.5s ease forwards 2.5s;
                 }
                 #roar-two {
                     stroke-dasharray: 785;
                     stroke-dashoffset: 785;
-                    animation: line-anim 1.5s ease forwards 0.2s, fill 0.5s ease forwards 3.5s;
+                    animation: line-anim 1.5s ease forwards 0.2s, fill 0.5s ease forwards 2.5s;
                 }
                 #roar-three {
                     stroke-dasharray: 785;
                     stroke-dashoffset: 785;
-                    animation: line-anim 1.5s ease forwards 0.4s, fill 0.5s ease forwards 3.5s;
+                    animation: line-anim 1.5s ease forwards 0.4s, fill 0.5s ease forwards 2.5s;
                 }
                 #roar-four {
                     stroke-dasharray: 785;
                     stroke-dashoffset: 785;
-                    animation: line-anim 1.5s ease forwards 0.6s, fill 0.5s ease forwards 3.5s;
+                    animation: line-anim 1.5s ease forwards 0.6s, fill 0.5s ease forwards 2.5s;
                 }
                 #roar-five {
                     stroke-dasharray: 785;
                     stroke-dashoffset: 785;
-                    animation: line-anim 1.5s ease forwards 0.8s, fill 0.5s ease forwards 3.5s;
+                    animation: line-anim 1.5s ease forwards 0.8s, fill 0.5s ease forwards 2.5s;
                 }
                 #roar-six {
                     stroke-dasharray: 785;
                     stroke-dashoffset: 785;
-                    animation: line-anim 1.5s ease forwards 1s, fill 0.5s ease forwards 3.5s;
+                    animation: line-anim 1.5s ease forwards 1s, fill 0.5s ease forwards 2.5s;
                 }
                 #roar-seven {
                     stroke-dasharray: 785;
                     stroke-dashoffset: 785;
-                    animation: line-anim 1.5s ease forwards 1.2s, fill 0.5s ease forwards 3.5s;
+                    animation: line-anim 1.5s ease forwards 1.2s, fill 0.5s ease forwards 2.5s;
                 }
             }
         }
