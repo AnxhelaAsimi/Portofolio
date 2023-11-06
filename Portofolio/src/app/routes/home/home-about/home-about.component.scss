@@ -12,123 +12,101 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
     flex-direction: column;
+    opacity: 0;
+}
+
+.timeline.animated {
+    opacity: 1;
 }
 
 .education {
     display: flex;
-    gap: 9rem;
-    margin-left: 12rem;
-    position: relative;
-    bottom:-3rem;
+    gap: 9vw;
+    margin-left: 44vh;
 }
 
-.education div{
-    width: 15rem;
-    height: 5rem;
+.education div {
+    width: 15vw;
+    background: #12141db3;
+    padding: 1rem;
+    border-radius: 2rem;
 }
 
 .experience {
     display: flex;
-    gap: 6rem;
-    margin-left: 24rem;
-    position: relative;
-    top: -5rem;
-}
-.experience div{
-    width: 15rem;
-    height: 5rem;
+    gap: 8vw;
+    margin-left: 11vw;
 }
 
-.line {
+.experience div {
+    width: 15vw;
+    background: #12141db3;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.timeline-wrapper {
+    position: absolute;
+    top: 22vh;
+    left: 0vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+}
+
+.animated .line {
     fill: none;
     stroke: #2ab673;
     stroke-miterlimit: 10;
     stroke-width: 5px;
     stroke-dasharray: 860; /* Length of the line path */
     stroke-dashoffset: 860; /* Start with the line hidden */
-    animation: line-anim 2.5s ease forwards, fill 0.2s ease forwards 3.5s;
+    animation: line-anim 2.5s ease forwards;
   }
 
-.bubble1 {
+.animated .bubble1 {
     stroke-dasharray: 785;
     stroke-dashoffset: 785;
-    animation: line-anim 2s ease forwards, fill 0.5s ease forwards 3.5s;
+    animation: line-anim 1.5s ease forwards;
 }
 
-.para1 p{
 
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-.bubble2 {
+.animated .bubble2 {
     stroke-dasharray: 785;
     stroke-dashoffset: 785;
-    animation: line-anim 2s ease forwards 0.4s, fill 0.5s ease forwards 3.5s;
+    animation: line-anim 1.5s ease forwards 0.2s;
 }
 
-.para2{
-     animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+.animated .bubble3 {
+    stroke-dasharray: 785;
+    stroke-dashoffset: 785;
+    animation: line-anim 1.5s ease forwards 0.4s;
 }
 
-.bubble3 {
+.animated .bubble4 {
     stroke-dasharray: 785;
     stroke-dashoffset: 785;
-    animation: line-anim 2s ease forwards 0.8s, fill 0.5s ease forwards 3.5s;
-}
-.para3{
-     animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-.bubble4 {
-    stroke-dasharray: 785;
-    stroke-dashoffset: 785;
-    animation: line-anim 2s ease forwards 1.2s, fill 0.5s ease forwards 3.5s;
-}
-.para4{
-     animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-.bubble5 {
-    stroke-dasharray: 785;
-    stroke-dashoffset: 785;
-    animation: line-anim 2s ease forwards 1.6s, fill 0.5s ease forwards 3.5s;
-}
-.para5{
-     animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-.bubble6 {
-    stroke-dasharray: 785;
-    stroke-dashoffset: 785;
-    animation: line-anim 2s ease forwards 2s, fill 0.5s ease forwards 3.5s;
-}
-.para6{
-     animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    animation: line-anim 1.5s ease forwards 0.6s;
 }
 
-.bubble7 {
+.animated .bubble5 {
     stroke-dasharray: 785;
     stroke-dashoffset: 785;
-    animation: line-anim 2s ease forwards 2.4s, fill 0.5s ease forwards 3.5s;
+    animation: line-anim 1.5s ease forwards 0.8s;
 }
-.para7{
-     animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+
+.animated .bubble6 {
+    stroke-dasharray: 785;
+    stroke-dashoffset: 785;
+    animation: line-anim 1.5s ease forwards 1s;
 }
+
+.animated .bubble7 {
+    stroke-dasharray: 785;
+    stroke-dashoffset: 785;
+    animation: line-anim 1.5s ease forwards 1.2s;
+}
+
   @keyframes line-anim {
     to {
       stroke-dashoffset: 0; /* Draw the line */

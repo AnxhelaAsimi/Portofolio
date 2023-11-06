@@ -4,12 +4,14 @@ import { HomeComponent } from './routes/home/home.component';
 import { GotLostComponent } from './routes/got-lost/got-lost.component';
 import { ContactComponent } from './routes/contact/contact.component';
 import { WorkComponent } from './routes/work/work.component';
+import { AboutMeComponent } from './routes/about-me/about-me.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
-   { path: 'work', component: WorkComponent },
+  { path: 'work', component: WorkComponent },
+  { path: 'about', component: AboutMeComponent},
   { path: '**', component: GotLostComponent }
 
 ];

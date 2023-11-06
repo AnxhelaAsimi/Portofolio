@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, NgZone, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { gsap } from 'gsap';
 
 
@@ -9,36 +9,44 @@ import { gsap } from 'gsap';
 })
 export class HomeAboutComponent implements OnInit, AfterViewInit, OnDestroy {
   private tl: gsap.core.Timeline;
-
+  element: HTMLElement | null = null;
+  intersectionObserver: IntersectionObserver | null = null;
+  
+  @ViewChild('timelineAnim') animatedElement: ElementRef | null = null;
   @ViewChild('line') line: ElementRef | null = null;
   @ViewChild('bubbles') bubbles: ElementRef | null = null;
 
-  constructor() {
+  constructor(private ngZone: NgZone) {
     this.tl = gsap.timeline();
   }
 
   ngOnInit() {
-    // Set initial states for SVG elements (e.g., hidden)
-    // if(this.line)
-    //   gsap.set(this.line.nativeElement, { drawSVG: '0% 0%' });
 
-    // if(this.bubbles)
-    //   gsap.set(this.bubbles.nativeElement, { autoAlpha: 0 });
   }
 
   ngAfterViewInit() {
-    // Define your animation timeline
     const tl = gsap.timeline();
-
-    // // Animate the line
-    // if(this.line)
-    //   tl.to(this.line.nativeElement, { duration: 2, drawSVG: '100% 100%' });
     
-    // if(this.bubbles)
-    // // Animate each bubble one after the other
-    // tl.to(this.bubbles.nativeElement.children, { duration: 0.5, autoAlpha: 1, stagger: 0.5 });
+
+    this.ngZone.runOutsideAngular(() => {
+      this.intersectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Add a class to trigger the animation
+            entry.target.classList.add('animated');
+          } else {
+            // Remove the class when not in the viewport
+            entry.target.classList.remove('animated');
+          }
+        });
+      });
+      if(this.animatedElement)
+        this.intersectionObserver?.observe(this.animatedElement.nativeElement);
+    }); 
+   
   }
 
   ngOnDestroy() {
+    this.intersectionObserver?.disconnect();
   }
 }
