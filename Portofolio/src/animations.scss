@@ -237,14 +237,3 @@
 @-webkit-keyframes rocket-movement {100% {-webkit-transform: translate(1200px,-600px); } }
 @keyframes rocket-movement { 100% {transform: translate(1200px,-600px);} }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}

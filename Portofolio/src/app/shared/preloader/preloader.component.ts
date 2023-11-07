@@ -16,21 +16,21 @@ export class PreloaderComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.timer = setInterval(() => {
-      this.progress = this.progress >= 100 ? 10 : this.progress + 10;
+    // this.timer = setInterval(() => {
+    //   this.progress = this.progress >= 100 ? 10 : this.progress + 10;
 
-      this.tl
-        .to('.square', {
-          opacity: 0.7
-        })
-        .to('.square', {
-          duration: 1.5,
-          ease: 'powerInOut',
-          opacity: 1,
-          repeat: -1,
-          yoyo: true
-        });
-    }, 500);
+    //   this.tl
+    //     .to('.square', {
+    //       opacity: 0.7
+    //     })
+    //     .to('.square', {
+    //       duration: 1.5,
+    //       ease: 'powerInOut',
+    //       opacity: 1,
+    //       repeat: -1,
+    //       yoyo: true
+    //     });
+    // }, 500);
   }
 
   ngOnDestroy() {

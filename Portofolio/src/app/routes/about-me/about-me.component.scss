@@ -1,0 +1,112 @@
+.about_wrapper{
+    margin-top: 8rem;
+}
+.avatar_description {
+    width: 100%;
+    padding: 5rem 10rem;
+    display: flex;
+    gap: 5rem;
+}
+.my_face {
+    background-image: url("../../../assets/myface.png");
+    background-position: 100%;
+    background-size: cover;
+    border-radius: 15px;
+    width: 30%;
+    -webkit-animation: slideInRight 2s ease forwards;
+    animation: slideInRight 2s ease forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.shading-bottom {
+    background: linear-gradient(0deg,var(--green1),hsla(0,0%,100%,.005) 93%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: end;
+    padding: 1rem;
+}
+
+.description_wrapper {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.description {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.description span {
+    color: var(--green6)
+}
+
+.skills {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 4%;
+    margin-top: -3rem;
+}
+
+.skill {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar {
+    width: 100%;
+    background-color: var(--blue6);
+    border-radius: 5px;
+    height: 0.5rem;
+}
+
+.bar-fill{
+    background-color:var(--green7);
+    border-radius: 5px;
+    height: 0.5rem;
+}
+
+.works_header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.works_header h2 {
+    font-weight: 700;
+    padding: 0;
+}
+
+.hobbies {
+    display: flex;
+    background:  var(--blue6);
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    width: max-content;
+    margin-top: -3rem;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hobbies div{
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--green6);
+    border: 3px solid var(--green5);
+    border-radius: 1rem;
+}
+
