@@ -10,6 +10,18 @@
     overflow: hidden;
 }
 
+.skills {
+    display: flex;
+    background: var(--blue6);
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    width: max-content;
+    margin-top: -3rem;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .intro {
     padding-right: 6rem;
     width: 55%;
