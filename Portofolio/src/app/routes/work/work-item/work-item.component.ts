@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 export class WorkItemComponent {
   @Input() title: string = "Company Calendar"; 
   @Input() description: string = "A Platform That Helps You Discover The Most Intriguing Locations For Your Vacations. Book Hotels And Spa's AA Platform That Helps You Discover The Most Intriguing Locations For Your Vacations. Book Hotels And SA Platform That Helps You Discover The Most Intriguing Locations For Your Vacations. Book Hotels And Spa's At A C pa's At A C t A Cheaper Rate"; 
-  @Input() image: string = "img1.webp"; 
+  @Input() image: string = "img1.png"; 
   @Input() url: string = "https://www.google.com/"; 
   @Input() isRight: boolean = true;
 

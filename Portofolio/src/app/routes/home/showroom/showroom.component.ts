@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ShowroomComponent {
     myworks: {title:string, image:string, description: string, technology: string, url:string }[] = [
-      {title: "Company Calendar", image: "img1.webp", description: "Know Legal Requirements And Dates The Company Must Keep To Avoid Legal Santions After A Company Is Incorporated", technology: "angular", url: "https://www.google.com"},
-      {title: "Other App", image: "img2.webp", description: "Manage Your Phone Contacts The Easy Way. Create, Update And Delete Your Personal Contacts All From One App. This Is A MERN Stack App With React Redux Toolkit. Find Source Code On My Github", technology: "angular", url: "https://www.livescore.com/en/"},
-      {title: "Phonebook App", image: "img1.webp", description: "Manage Your Phone Contacts The Easy Way. Create, Update And Delete Your Personal Contacts All From One App. This Is A MERN Stack App With React Redux Toolkit. Find Source Code On My Github", technology: "angular", url: "https://www.goplay365.com/"},
+      {title: "Company Calendar", image: "img2.png", description: "Know Legal Requirements And Dates The Company Must Keep To Avoid Legal Santions After A Company Is Incorporated", technology: "angular", url: "https://www.google.com"},
+      {title: "Other App", image: "img1.png", description: "Manage Your Phone Contacts The Easy Way. Create, Update And Delete Your Personal Contacts All From One App. This Is A MERN Stack App With React Redux Toolkit. Find Source Code On My Github", technology: "angular", url: "https://www.livescore.com/en/"},
+      {title: "Phonebook App", image: "img3.png", description: "Manage Your Phone Contacts The Easy Way. Create, Update And Delete Your Personal Contacts All From One App. This Is A MERN Stack App With React Redux Toolkit. Find Source Code On My Github", technology: "angular", url: "https://www.goplay365.com/"},
       {title: "Second Other App", image: "img2.webp", description: "Know Legal Requirements And Dates The Company Must Keep To Avoid Legal Santions After A Company Is Incorporated", technology: "angular", url: "https://www.goplay365.com/"}
     ];
 
