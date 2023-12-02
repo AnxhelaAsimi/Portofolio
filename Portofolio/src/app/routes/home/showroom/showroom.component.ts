@@ -7,10 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ShowroomComponent {
     myworks: {title:string, image:string, description: string, technology: string, url:string }[] = [
-      {title: "Company Calendar", image: "img2.png", description: "Know Legal Requirements And Dates The Company Must Keep To Avoid Legal Santions After A Company Is Incorporated", technology: "angular", url: "https://www.google.com"},
-      {title: "Other App", image: "img1.png", description: "Manage Your Phone Contacts The Easy Way. Create, Update And Delete Your Personal Contacts All From One App. This Is A MERN Stack App With React Redux Toolkit. Find Source Code On My Github", technology: "angular", url: "https://www.livescore.com/en/"},
-      {title: "Phonebook App", image: "img3.png", description: "Manage Your Phone Contacts The Easy Way. Create, Update And Delete Your Personal Contacts All From One App. This Is A MERN Stack App With React Redux Toolkit. Find Source Code On My Github", technology: "angular", url: "https://www.goplay365.com/"},
-      {title: "Second Other App", image: "img2.webp", description: "Know Legal Requirements And Dates The Company Must Keep To Avoid Legal Santions After A Company Is Incorporated", technology: "angular", url: "https://www.goplay365.com/"}
+      {title: "Kids Afterschool Website", image: "img3.png", description: "I recently developed a lively WordPress website for a kids' after-school program, infusing it with vibrant colors, playful animations, and a user-friendly design. ", technology: "Wordpress", url: "https://mimicenter.com/en/home-english/"},
+      {title: "Tic-Tac-Toe", image: "img2.png", description: "This is a Tic Tac Toe game developed by me using Angular, complete with custom-designed aesthetics for a polished and playful user interface.", technology: "angular", url: "https://tic-tac-toe-angular-glke.vercel.app/"},
+      {title: "Other App", image: "img1.png", description: "Retro gameboy snake game: Another playful angular project I crafted with my own designs to bring back happy memories from childhood.", technology: "angular", url: "https://snake-game-blush.vercel.app/"},
     ];
 
     sliderSelection: number = 0;
