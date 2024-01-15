@@ -7,7 +7,7 @@
             <h4>{{title}}</h4>
         </div>
         <div class="description">{{description}}</div>
-        <div class="pulse_button_wrap pointer"><button class="pulse_button pointer">visit →</button></div>
+        <div class="pulse_button_wrap pointer"><button class="pulse_button pointer" (click)="goTo(url)">visit →</button></div>
 
     </div>
     <div  *ngIf="!isRight" class="work_image_reverse">

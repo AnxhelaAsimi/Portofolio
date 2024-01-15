@@ -12,4 +12,7 @@ export class WorkItemComponent {
   @Input() url: string = "https://www.google.com/"; 
   @Input() isRight: boolean = true;
 
+  goTo(url: string){
+    window.open(url, "_blank");
+  }
 }
