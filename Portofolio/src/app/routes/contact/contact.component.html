@@ -6,7 +6,8 @@
         <div class="astronaut">
 
         </div>
-        <div class="contact_form">
+        <form class="contact_form" action="https://formspree.io/f/xjvnkanz"
+        method="POST"  target="_blank">
             <div style="display: flex; gap: 1rem">
                 <div class="contact_input" style="width: 15rem">
                     <input  type="text" name="name" placeholder="name"> 
@@ -21,7 +22,8 @@
             <div class="contact_input">
                 <textarea cols="50" rows="10" name="message" placeholder="type your message here..." ></textarea>
             </div>
-            <div class="pulse_button_wrap pointer"><button class="pulse_button pointer">Send →</button></div>
-        </div>
+            <div class="pulse_button_wrap pointer"><button class="pulse_button pointer" type="submit"
+                (click)="redirectHome($event)">Send →</button></div>
+        </form>
     </div>        
 </div>

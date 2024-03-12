@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { MY_WORKS } from 'src/app/shared/constants/myworks';
 
 @Component({
@@ -9,6 +10,9 @@ import { MY_WORKS } from 'src/app/shared/constants/myworks';
 export class ShowroomComponent {
     myworks = MY_WORKS;
     sliderSelection: number = 0;
+
+    constructor(private router: Router){
+    }
 
     changeSliderSelection(value:number){
       if(this.sliderSelection + value >= this.myworks.length)
@@ -22,6 +26,10 @@ export class ShowroomComponent {
 
     visitWork(workId: number){
       window.open(this.myworks[workId].url, "_blank");
+    }
+  
+    navigateTo(menu: string) {
+      this.router.navigate([menu]);
     }
   
 }

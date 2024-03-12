@@ -4,7 +4,21 @@ export const MY_WORKS: { title: string; image: string; description: string; tech
     image: "img3.png",
     description: "I recently developed a lively WordPress website for a kids' after-school program, infusing it with vibrant colors, playful animations, and a user-friendly design.",
     technology: "WordPress",
-    url: "https://mimicenter.com/en/home-english/"
+    url: "http://mimicenter.rf.gd/"
+  },
+  {
+    title: "Dental & Aesthetic Clinic Website",
+    image: "img4.png",
+    description: "I recently designed and developed a sophisticated WordPress website for a dental and aesthetic clinic, seamlessly blending professionalism with modern aesthetics. The site features user-friendly navigation, essential industry functionalities, and responsive design to ensure a captivating and accessible online experience for visitors.",
+    technology: "WordPress",
+    url: "https://amoclinic.it/"
+  },
+  {
+    title: "ProShop ECommerce MERN App",
+    image: "img5.png",
+    description: "I've recently completed the development of a feature-rich ecommerce website using the MERN stack as part of my learning journey. This project includes a fully functional shopping cart system and seamless integration with PayPal, providing users with a smooth and secure online shopping experience from product browsing to checkout.",
+    technology: "MERN Stack",
+    url: "https://mern-e-commerce-beta.vercel.app/"
   },
   {
     title: "Tic-Tac-Toe",
