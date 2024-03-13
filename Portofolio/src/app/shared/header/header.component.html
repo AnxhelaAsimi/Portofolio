@@ -2,7 +2,7 @@
     <div class="logo pointer" [routerLink]="['home']">
         <div class="logo_a pointer"></div>
     </div>    
-    <div class="toggle_wrapper pointer" (click)="toggleMenu()">
+    <div class="toggle_wrapper pointer" (click)="toggleMenu()"  [ngClass]="{'wrapper_toggled': sharedService.isMenuToggled}">
         <div class="bar_1 pointer" [ngClass]="{'bar_1_toggled': sharedService.isMenuToggled}"></div>
         <div class="bar_2 pointer" [ngClass]="{'bar_2_toggled': sharedService.isMenuToggled}"></div>
         <div class="bar_3 pointer" [ngClass]="{'bar_3_toggled': sharedService.isMenuToggled}"></div>
