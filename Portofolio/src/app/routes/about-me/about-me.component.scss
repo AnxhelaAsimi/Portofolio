@@ -6,10 +6,20 @@
     padding: 5rem 10rem;
     display: flex;
     gap: 5rem;
+
+    @media (min-width: 1025px) and (max-width: 1300px){
+        gap: 4rem;
+        padding: 5rem 4rem;
+    }
+    @media (min-width: 760px) and (max-width: 1024px){
+        width: 100%;
+        padding: 5rem 3rem;
+    }
+
 }
 .my_face {
     background-image: url("../../../assets/myface.png");
-    background-position: 100%;
+    background-position: center;
     background-size: cover;
     border-radius: 15px;
     width: 30%;
@@ -18,8 +28,43 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    
+    @media (min-width: 1025px) and (max-width: 1300px){
+        width: 40%;
+    }
+    @media (min-width: 760px) and (max-width: 1024px){
+        display: none;
+    }
+    @media (min-width: 480px) and (max-width: 759px){
+        display: none;
+    }
+    @media (max-width: 479px){
+        display: none;
+    } 
 }
-
+.my_face_mini {
+    background-image: url("../../../assets/myface.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    width: 30%;
+    -webkit-animation: slideInRight 2s ease forwards;
+    animation: slideInRight 2s ease forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    @media (min-width: 1025px) and (max-width: 1300px){
+        display: none;
+    }
+    @media (min-width: 760px) and (max-width: 1024px){
+        min-width: 250px;
+    }
+    @media (min-width: 480px) and (max-width: 759px){
+    }
+    @media (max-width: 479px){
+    } 
+}
 .shading-bottom {
     background: linear-gradient(0deg,var(--green1),hsla(0,0%,100%,.005) 93%);
     border-bottom-left-radius: 15px;
@@ -30,12 +75,19 @@
     justify-content: end;
     padding: 1rem;
 }
-
+.face_desc_wrapper{
+    display: flex;
+    gap: 2rem;
+}
 .description_wrapper {
     width: 70%;
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    @media (min-width: 760px) and (max-width: 1024px) {
+        width: 100%;
+    }
+    
 }
 
 .description {
@@ -83,6 +135,16 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    @media (min-width: 1025px) and (max-width: 1300px){
+        margin-top: 4rem!important;
+        margin-left: 4rem!important;
+        margin-bottom: 0!important;
+    }
+    @media (min-width: 760px) and (max-width: 1024px){
+        margin-left: 3rem!important;
+        margin-bottom: 2rem!important;
+        margin-top: 2rem!important;
+    }    
 }
 
 .works_header h2 {

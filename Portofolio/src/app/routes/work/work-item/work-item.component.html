@@ -1,4 +1,4 @@
-<div class="work_item_wrapper">
+<div class="work_item_wrapper" [ngClass]="{'work_item_wrapper_reverse': !isRight}">
     <div *ngIf="isRight" class="work_image">
         <img src="../../../../assets/showroom/{{image}}">
     </div>

@@ -11,7 +11,8 @@ export class HomeAboutComponent implements OnInit, AfterViewInit, OnDestroy {
   private tl: gsap.core.Timeline;
   element: HTMLElement | null = null;
   intersectionObserver: IntersectionObserver | null = null;
-  
+  public innerWidth: any;
+
   @ViewChild('timelineAnim') animatedElement: ElementRef | null = null;
   @ViewChild('line') line: ElementRef | null = null;
   @ViewChild('bubbles') bubbles: ElementRef | null = null;
@@ -21,9 +22,11 @@ export class HomeAboutComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngOnInit() {
-
+    this.innerWidth = window.innerWidth;
   }
-
+  onResize() {
+    this.innerWidth = window.innerWidth;
+  }
   ngAfterViewInit() {
     const tl = gsap.timeline();
     

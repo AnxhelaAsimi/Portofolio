@@ -121,7 +121,9 @@ a {
         padding: 0.7rem 1.7rem;
         font-size: 2.5rem;
     }    
-    
+    @media (min-width: 760px) and (max-width: 1024px) {
+        padding: 0.6rem 1.5rem;
+    }
 }
 
 //pulse button styles
@@ -189,4 +191,22 @@ a {
 
 .pulse_button:hover::after{
     display: none;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1300px){
+    h4{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.9rem;
+    }
+    h2 {
+        font-size: 2.2rem;
+    }
+
 }

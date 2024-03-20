@@ -14,6 +14,11 @@
     min-height: 60vh;
     height: 60vh;
     align-items: center;
+    @media (min-width: 760px) and (max-width: 1024px) {
+        width: 90%;
+        margin-top:2rem;
+    }
+    
 }
 
 .astronaut{
@@ -24,6 +29,10 @@
     -webkit-animation: zoomIn 1.5s ease forwards;
     animation: zoomIn 1.5s ease forwards;
     background-position: center;
+    @media (min-width: 760px) and (max-width: 1024px) {
+        width: 40%;
+        margin-right: 3rem;
+    }
 }
 
 .contact_form {
