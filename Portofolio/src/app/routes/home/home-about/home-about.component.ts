@@ -8,17 +8,12 @@ import { gsap } from 'gsap';
   styleUrls: ['./home-about.component.scss']
 })
 export class HomeAboutComponent implements OnInit, AfterViewInit, OnDestroy {
-  private tl: gsap.core.Timeline;
-  element: HTMLElement | null = null;
-  intersectionObserver: IntersectionObserver | null = null;
   public innerWidth: any;
-
+  
+  intersectionObserver: IntersectionObserver | null = null;
   @ViewChild('timelineAnim') animatedElement: ElementRef | null = null;
-  @ViewChild('line') line: ElementRef | null = null;
-  @ViewChild('bubbles') bubbles: ElementRef | null = null;
-
+  
   constructor(private ngZone: NgZone) {
-    this.tl = gsap.timeline();
   }
 
   ngOnInit() {
@@ -28,9 +23,6 @@ export class HomeAboutComponent implements OnInit, AfterViewInit, OnDestroy {
     this.innerWidth = window.innerWidth;
   }
   ngAfterViewInit() {
-    const tl = gsap.timeline();
-    
-
     this.ngZone.runOutsideAngular(() => {
       this.intersectionObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {

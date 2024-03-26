@@ -5,14 +5,21 @@
     margin: 6rem 0;
     width: 100%;
 
-    @media (min-width: 760px) and (max-width: 1024px) {
+    @media (min-width: 760px) and (max-width: 1024px){
         flex-direction: column;
     }
     
+    @media (min-width: 480px) and (max-width: 759px){
+        flex-direction: column;
+        margin: 3rem 0;
+    }
 }
 
 .work_item_wrapper_reverse {
-    @media (min-width: 760px) and (max-width: 1024px) {
+    @media (min-width: 760px) and (max-width: 1024px){
+        flex-direction: column-reverse;
+    }
+    @media (min-width: 480px) and (max-width: 759px){
         flex-direction: column-reverse;
     }
 }
@@ -23,7 +30,10 @@
     display: flex;
     justify-content: center;
 
-    @media (min-width: 760px) and (max-width: 1024px) {
+    @media (min-width: 760px) and (max-width: 1024px){
+        width: 80%;
+    }
+    @media (min-width: 480px) and (max-width: 759px){
         width: 80%;
     }
 }
@@ -39,6 +49,11 @@
     -webkit-transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg);
     transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg);
     transition: all .6s ease;
+
+    @media (min-width: 480px) and (max-width: 759px){   
+        height: 284px;
+        width: 500px;
+    }
 }
 
 .work_image_reverse img {
@@ -58,6 +73,11 @@
     -webkit-transform: perspective(800px) rotateY(-25deg) scale(.8) rotateX(10deg);
     transform: perspective(800px) rotateY(-25deg) scale(.8) rotateX(10deg);
     transition: all .6s ease;
+    
+    @media (min-width: 480px) and (max-width: 759px){   
+        height: 284px;
+        width: 500px;
+    }
 
 }
 
@@ -87,9 +107,17 @@
     align-items: center;
     justify-content: center;
 
-    @media (min-width: 760px) and (max-width: 1024px) {
+    @media (min-width: 760px) and (max-width: 1024px){
         width: 80%;
     }
+    
+    @media (min-width: 480px) and (max-width: 759px){
+        width: 100%;
+    }
+    @media (max-width: 479px) {
+        width: 100%;
+    } 
+
 }
 
 .title h4 {
@@ -109,6 +137,14 @@
     font-size: 1rem;
     margin: 0 0 3.5rem;
     text-align: center;
+    
+    @media (min-width: 480px) and (max-width: 759px){
+        margin: 0 0 0.5rem;
+    }
+    @media (max-width: 479px) {
+        margin: 0 0 0.5rem;
+    } 
+
 }
 
 
@@ -116,6 +152,28 @@
     .title h4{
         font-size: 1.5rem;
     }
-
 }
 
+@media (min-width: 480px) and (max-width: 759px){
+    .title h4{
+        font-size: 1.3rem;
+    }
+}
+
+.pulse_button:after{
+    animation: ring_local 1.5s infinite;
+}
+
+
+@keyframes ring_local {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 150px;
+      height: 60px;
+      opacity: 0;
+    }
+  }
