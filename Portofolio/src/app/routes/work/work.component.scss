@@ -1,5 +1,8 @@
 .works_wrapper {
     margin-top: 15rem;
+    @media (max-width: 479px){
+        margin-top: 8rem;
+    } 
 }
 
 .works_header {

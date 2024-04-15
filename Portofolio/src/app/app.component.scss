@@ -208,6 +208,8 @@ footer {
         font-size: .9rem;
         text-align: center;
         padding: .7rem .2rem;
+        display: flex;
+        flex-direction: column;
     }
     span {
         animation: heartBeat 2.5s infinite;

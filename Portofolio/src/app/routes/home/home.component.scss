@@ -27,7 +27,7 @@
         flex-direction: column;
         padding: 0rem 3rem;
         padding-top: 4rem;
-        height: fit-content;
+        height: 100vh;
     } 
     
 }
@@ -165,8 +165,8 @@
         margin-bottom: 2rem;
     }
     @media (max-width: 479px){
-        width: 60%;
-        margin-top: 2rem;
+        width: 90%;
+        margin-top: 6rem;
         margin-bottom: 2rem;
     } 
     
